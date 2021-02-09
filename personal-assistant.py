@@ -23,6 +23,7 @@ def listen():
 
 def respond(audioString):
     print(audioString)
+
     tts = gTTS(text=audioString, lang='en')
     tts.save("speech.mp3")
     mixer.init()
